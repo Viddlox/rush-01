@@ -6,7 +6,7 @@
 /*   By: micheng <micheng@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/11 15:38:21 by micheng           #+#    #+#             */
-/*   Updated: 2023/08/13 10:48:48 by micheng          ###   ########.fr       */
+/*   Updated: 2023/08/13 10:59:34 by micheng          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,8 +77,9 @@ int		check_static(t_vars *vars, int x, int y);
 int		check_duplicates(t_vars *vars, int x, int y);
 
 //heuristic utils
-void	add_static(t_vars *vars, int x, int y);
+void	add_static_nodes(t_vars *vars, int x, int y);
 void	init_static_list(t_vars *vars, t_static_data **data);
+void	set_static_nodes(t_vars *vars);
 void	clear_static_data(t_static_data **data);
 
 //testing functions

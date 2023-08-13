@@ -6,7 +6,7 @@
 /*   By: micheng <micheng@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/12 11:53:00 by micheng           #+#    #+#             */
-/*   Updated: 2023/08/12 14:34:22 by micheng          ###   ########.fr       */
+/*   Updated: 2023/08/13 11:01:14 by micheng          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ void	clear_static_data(t_static_data **data)
 	*data = NULL;
 }
 
-void	add_static(t_vars *vars, int x, int y)
+void	add_static_nodes(t_vars *vars, int x, int y)
 {
 	t_static	*current;
 	t_static	*temp;

@@ -6,7 +6,7 @@
 /*   By: micheng <micheng@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/11 20:44:44 by micheng           #+#    #+#             */
-/*   Updated: 2023/08/12 17:46:27 by micheng          ###   ########.fr       */
+/*   Updated: 2023/08/13 10:59:46 by micheng          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,5 +78,22 @@ void	flood_fill(t_vars *vars)
 			col++;
 		}
 		row++;
+	}
+}
+
+void	set_static_nodes(t_vars *vars)
+{
+	int	y;
+	int	x;
+
+	y = -1;
+	while (++y < vars->grid_len)
+	{
+		x = -1;
+		while (++x < vars->grid_len)
+		{
+			if (vars->grid[y][x] != 0)
+				add_static_nodes(vars, x, y);
+		}
 	}
 }
