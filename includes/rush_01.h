@@ -6,7 +6,7 @@
 /*   By: micheng <micheng@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/11 15:38:21 by micheng           #+#    #+#             */
-/*   Updated: 2023/08/13 05:45:20 by micheng          ###   ########.fr       */
+/*   Updated: 2023/08/13 10:48:48 by micheng          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,9 +64,10 @@ void	heuristic_check_start(t_vars *vars, t_pos *pos);
 void	check_set_hi_lo_1(t_vars *vars, t_pos *pos);
 void	check_set_hi_lo_2(t_vars *vars, t_pos *pos);
 int		hi_lo(t_vars *vars, int x, int y);
-
-void	hi_lo_col_up_down(t_vars *vars, int x, int y);
-void	hi_lo_row_left_right(t_vars *vars, int x, int y);
+int		hi_lo_top_bottom(t_vars *vars, int x, int y);
+int		hi_lo_bottom_top(t_vars *vars, int x, int y);
+int		hi_lo_left_right(t_vars *vars, int x, int y);
+int		hi_lo_right_left(t_vars *vars, int x, int y);
 
 //main game brute force functions
 int		check_cases(t_vars *vars, int x, int y);

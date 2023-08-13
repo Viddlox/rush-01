@@ -6,7 +6,7 @@
 /*   By: micheng <micheng@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/11 15:38:07 by micheng           #+#    #+#             */
-/*   Updated: 2023/08/13 04:08:11 by micheng          ###   ########.fr       */
+/*   Updated: 2023/08/13 10:49:27 by micheng          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	solve(t_vars *vars, t_pos *pos, int x, int y)
 	tower_h = -1;
 	heuristic_check_start(vars, pos);
 	display_solution(vars);
+	print_static_list(vars->head_static->head);
 	return (0);
 	// while (++tower_h < vars->grid_len)
 	// {
